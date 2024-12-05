@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import LoginSignup from './Components/Assets/LoginSignup/LoginSignup';
 
 
 function App() {
@@ -11,10 +12,7 @@ function App() {
 
   return (
     <div>
-      <header>
-        <div className = 'title'>Password Manager</div>
-      </header>
-      <div className = 'register'>Create Account</div>
+      <LoginSignup/>
     </div>
     
   );
