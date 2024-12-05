@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './LoginSignup.css'
+import './Signup.css'
 import { useNavigate } from 'react-router-dom'
 
-const LoginSignup = () => {
+const Signup = () => {
 
   const [action, setAction] = useState("Create Account");
 
@@ -33,4 +33,4 @@ const LoginSignup = () => {
   )
 }
 
-export default LoginSignup
+export default Signup

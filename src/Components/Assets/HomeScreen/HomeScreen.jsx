@@ -16,7 +16,7 @@ const HomeScreen = () => {
       </div>
       
       <div>
-        <button className = 'return' onClick={() => navigate('/')}>
+        <button className = 'return' onClick={() => navigate('/login')}>
           Go To Login
           </button>
       </div>
