@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './LoginSignup.css'
+import { useNavigate } from 'react-router-dom'
 
 const LoginSignup = () => {
+
+  const [action, setAction] = useState("Create Account");
+
+  const navigate = useNavigate()
+
   return (
     <div className='container'>
       <div className='header'>
         <div className='trueHeader'>
           Password Manager
         </div>
-        <div className='text'>Sign Up</div>
+        <div className='text'>{action}</div>
         <div className='underline'></div>
       </div>
       <div className='inputs'>
@@ -18,9 +24,9 @@ const LoginSignup = () => {
         <div className='input'>
           <input type='password' placeholder='Enter your password...'/>
         </div>
-        <div className='submit'>
+        <button className='submit' onClick={()=> navigate('/home')}>
           Create Account
-        </div>
+        </button>
       </div>
     </div>
     
